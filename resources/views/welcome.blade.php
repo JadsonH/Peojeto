@@ -5,6 +5,7 @@
    <meta name="viewport" content="widtth=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>The Five</title>
+   <link rel="shortcut icon" href="/img/icone.png">
    <!--Fonte-->
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
    <!--bootstrap-->
@@ -33,7 +34,7 @@
 	  </button>
 	  <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
 	    <div class="navbar-nav">
-		 <a href="#nav-container" class="nav-item nav-link" id="home-menu">Home</a>
+		 <a href="#nav-container" class="nav-item nav-link" id="home-menu">Dashboard</a>
 		 <a href="#about-area" class="nav-item nav-link" id="about-menu">Sobre</a>
 		 <a href="#contact-area" class="nav-item nav-link" id="contact-menu">Contatos</a>
 		</div>
@@ -51,23 +52,23 @@
 	  </ol>
 	  <div class="carousel-inner">
 	   <div class="carousel-item active">
-	    <img src="/img/banner1.jpg" class="d-block w-100" alt="Projetos de e-commerce">
+	    <img src="/img/b1.jpg" class="d-block w-100" alt="Projetos de e-commerce">
 		<div class="carousel-caption d-none d-md-block">
 		  <h2>Entre e veja mais sobre esse mundo do cinema e da literatura</h2>
 		  <p>Entre nesse universo</p>
-		  <a href="{{ url('/principal') }}" class="main-btn">Login</a>
+		  <a href="{{ url('/login') }}" class="main-btn">Login</a>
 		</div>
 	   </div>
 	   <div class="carousel-item ">
-	    <img src="/img/banner2.jpg" class="d-block w-100" alt="Engenharia">
+	    <img src="/img/b2.jpg" class="d-block w-100" alt="Engenharia">
 		<div class="carousel-caption d-none d-md-block">
 		  <h2>Conheça o nosso trabalho</h2>
 		  <p>Se cadastre no nosso site e veja tudo sobre os filmes/séries e os livros</p>
-		  <a href="#" class="main-btn">Cadastrar-se</a>
+		  <a href="{{ url('/register') }}" class="main-btn">Cadastrar-se</a>
 		</div>
 	   </div>
 	   <div class="carousel-item ">
-	    <img src="/img/banner3.jpg" class="d-block w-100" alt="Software">
+	    <img src="/img/b3.jpg" class="d-block w-100" alt="Software">
 		<div class="carousel-caption d-none d-md-block">
 		  <h2>Quer saber mais sobre o nosso site</h2>
 		  <p>Literatura e cinema também é importante</p>
@@ -171,7 +172,7 @@
     <div class="container">
 	  <div class="row">
 	    <div class="col-md-12">
-		 <p>Desenvolvido por<a href="Colocar qualquer link" target="_blank"> The Five</a> &copy; 2020</p>
+		 <p>Desenvolvido por<a href="Colocar qualquer link" target="_blank"> The Five</a> &copy; 2022</p>
 		</div>
 	  </div>
 	</div>

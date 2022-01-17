@@ -1,0 +1,98 @@
+/*Estilo geral do projeto*/
+body{
+	font-family:'Roboto', sons-serif;
+}
+.row{
+	mrgin: 0;
+}
+.container{
+	padding: 70px 0;
+}
+p, li{
+	color: #444;
+	font-size: 14px;
+}
+/*Estilo da barra de navegação*/
+header, .navbar{
+	background-color: #0F222D;
+}
+#nav-container{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+#logo{
+	width: 200px;
+}
+.navbar-brand{
+	padding: 0;
+	color: #FFF;
+}
+.navbar-brand:hover{
+	color: #FFF;
+}
+#navbar-links a{
+	color: #FFF;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+	padding: 1rem .8rem;
+}
+
+/*Cadastro e login*/
+.form-control{
+    width: 600px;
+    display: block;
+	margin: 0 auto;
+}
+.main-title{
+	color: #444;
+	margin: 0 0 65px 0;
+	font-size: 40px;
+	text-align: center;
+}
+.main-title::after{
+	content: "";
+	border-top: 2px solid #333;
+	width: 15%;
+	position: absolute;
+	top: 60px;
+	left: 42.5%;
+}
+.main-btn{
+	background-color: #BA3521;
+	color: #FFF;
+	text-transform: uppercase;
+	width: 150px;
+	height: 50px;
+	padding: 10px 20px;
+	border-radius: 30px;
+	border: 3px solid transparent;
+	transition: .5s; 
+	display: block;
+	margin: 0 auto;
+}
+.main-btn:hover{
+	text-decoration: none;
+	color: #BA3521;
+	background-color: transparent;
+	border-color: #BA3521;
+}
+
+/*Copy*/
+#copy-rea{
+	background-color: #F1F1F1;
+}
+#copy-area .container{
+	padding: 10px 0;
+	text-align: center;
+}
+#copy-area .container p{
+	margin-bottom: 0;
+}
+#copy-area .container a{
+	font-weight: bold;
+	color: #444;
+}
+#copy-area .container a:hover{
+	text-decoration: none;
+	color: #BA3521; 
+}

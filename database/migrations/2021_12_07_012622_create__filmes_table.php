@@ -14,7 +14,7 @@ class CreateFilmesTable extends Migration
     public function up()
     {
         Schema::create('filmes', function (Blueprint $table) {
-            $table->id();
+            $table->id()->default('');
             $table->string('nome')->default('');
             $table->string('ano')->default('');
             $table->string('pais', 100 )->default('');

@@ -14,16 +14,16 @@ class CreateSeriesTable extends Migration
     public function up()
     {
         Schema::create('series', function (Blueprint $table) {
-            $table->id();
-            $table->string('nome');
-            $table->date('ano');
-            $table->string('pais', 100 );
-            $table->string('genero', 100 );
-            $table->string('diretor', 200);
-            $table->string('faixa etaria');
-            $table->string('atores', 1000);
-            $table->string('sinopse', 1000000);
-            $table->string('critica', 100000000);
+            $table->id()->default('');
+            $table->string('nome')->default('');
+            $table->date('ano')->default('');
+            $table->string('pais', 100 )->default('');
+            $table->string('genero', 100 )->default('');
+            $table->string('diretor', 200)->default('');
+            $table->string('faixa_etaria')->default('');
+            $table->string('atores', 1000)->default('');
+            $table->string('sinopse', 1000000)->default('');
+            $table->string('critica', 100000000)->default('');
 
             $table->unsignedBigInteger('user_id')
             ->nullable();//permitir valor nulo
