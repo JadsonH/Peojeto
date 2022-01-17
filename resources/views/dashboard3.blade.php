@@ -22,7 +22,7 @@
                    <p>Crítica: <input type="text" class="form-control" name="critica"></p><br>
                    <input type="submit" class="main-btn" value="enviar">
                    </form>
-                   <h1>Livros</h1>
+                   <h1>Livros:</h1>
                    @foreach ($livros as $element)
                    <p>
                    {{$element->nome}}

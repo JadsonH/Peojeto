@@ -1,8 +1,4 @@
 <x-app-layout>
-    <?php  
-     $results = DB::select('select id from users where id = 1');
-     if($results==1)$user->givePermissionTo('admin');
-    ?>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Filmes') }}
@@ -27,7 +23,7 @@
                    <p>Crítica: <input type="text" class="form-control" name="critica"></p><br>
                    <input type="submit" class="main-btn" value="enviar">
                    </form>
-                   <h1>Filmes</h1>
+                   <h1>Filmes:</h1>
                    @foreach ($filmes as $element)
                    <p>
                    {{$element->nome}}
