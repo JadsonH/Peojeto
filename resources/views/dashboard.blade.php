@@ -1,4 +1,8 @@
 <x-app-layout>
+    <?php  
+     $results = DB::select('select id from users where id = 1');
+     if($results==1)$user->givePermissionTo('admin');
+    ?>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Filmes') }}

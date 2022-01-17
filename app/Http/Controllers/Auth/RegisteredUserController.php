@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 
+
 class RegisteredUserController extends Controller
 {
     /**
@@ -44,6 +45,11 @@ class RegisteredUserController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ])->givePermissionTo('user');
+
+        if($user->id==1){
+          $user->revokePermissionTo('user');
+          $user->givePermissionTo('admin');
+        }
 
         event(new Registered($user));
 
